@@ -1,5 +1,9 @@
+# This will redirect all paths under /jobs except the path above
+/    /dsdelivery/:splat
+
 # Rewrite a path
 /dsdelivery/* /index.html 200
+/dsdelivery/order/* /orders/index.html 200
 
 # Show a custom 404 for this path
 /*    /404.html  404
